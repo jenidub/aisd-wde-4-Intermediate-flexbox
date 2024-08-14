@@ -1,3 +1,4 @@
+
 # WDE04 Intermediate Flexbox
 
 ![Screenshot of the project](assets/images/example.png)
@@ -94,33 +95,35 @@ Open `style.css` and add the following styles:
 #### Add Basic Reset and Body Styles
 
 ```css
-/* Reset margin, padding, and box-sizing for all elements */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Set height of html and body to 100% to ensure they take up the full height of the viewport */
 html,
 body {
   height: 100%;
 }
 
-/* Ensure the main content area takes up remaining space between header and footer */
 main {
   flex: 1;
 }
 
-/* Make body a flex container and set up flexbox layout */
 body {
   font-family: Arial, sans-serif;
-  min-height: 100vh; /* Ensures the body takes up at least the full height of the viewport */
-  display: flex; /* Enables Flexbox on the body element */
-  flex-direction: column; /* Arranges children (header, main, footer) in a column */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
   background-color: lightgray;
 }
 ```
+
+**Explanation:**
+- The `*` selector resets the margin, padding, and sets `box-sizing` to `border-box` for all elements. This ensures consistency across different browsers.
+- The `html` and `body` selectors set their height to 100% so that they take up the full height of the viewport.
+- The `main` selector is set to flex-grow (`flex: 1`) so it can expand to fill the space between the header and footer.
+- The `body` selector is styled as a flex container, using Flexbox to arrange the header, main, and footer in a column. The `min-height: 100vh` ensures that the body takes up at least the full height of the viewport, and the background color is set to light gray.
 
 #### Style the Header and Navigation Bar
 
@@ -131,10 +134,9 @@ header {
   padding: 1em 0;
 }
 
-/* Make the navigation menu a flex container */
 nav ul {
-  display: flex; /* Enables Flexbox on the ul element */
-  justify-content: center; /* Centers the navigation items horizontally */
+  display: flex;
+  justify-content: center;
   list-style: none;
 }
 
@@ -149,6 +151,12 @@ nav ul li a {
 }
 ```
 
+**Explanation:**
+- The `header` selector is styled with a dark background color and white text, with padding on the top and bottom.
+- The `nav ul` selector is styled as a flex container with centered items (`justify-content: center`), and the list-style is removed.
+- The `nav ul li` selector adds horizontal spacing between each navigation item.
+- The `nav ul li a` selector styles the links in the navigation bar, making the text white, removing the underline, and setting the font to bold.
+
 #### Style the Hero Section
 
 ```css
@@ -156,37 +164,46 @@ nav ul li a {
   text-align: center;
   padding: 2em 0;
   color: Black;
-  display: flex; /* Enables Flexbox on the hero section */
-  flex-direction: column; /* Arranges children in a column */
-  align-items: center; /* Centers content horizontally */
-  justify-content: center; /* Centers content vertically */
-  flex: 1; /* Allows the hero section to grow and take up available space */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
 }
 ```
+
+**Explanation:**
+- The `hero` section is centered both horizontally (`text-align: center`) and vertically using Flexbox. It also has padding on the top and bottom.
+- The `display: flex` makes the hero section a flex container, with its children arranged in a column (`flex-direction: column`), centered horizontally (`align-items: center`), and vertically (`justify-content: center`).
+- The `flex: 1` allows the hero section to grow and take up available space.
 
 #### Style the Content Section
 
 ```css
 .content {
-  display: flex; /* Enables Flexbox on the content section */
-  justify-content: space-between; /* Distributes space between content boxes */
+  display: flex;
+  justify-content: space-between;
   padding: 2em;
-  flex-wrap: wrap; /* Allows the content boxes to wrap to the next line if needed */
-  flex: 1; /* Allows the content section to grow and take up available space */
+  flex-wrap: wrap;
+  flex: 1;
 }
 
-/* Style for individual content boxes */
 .content .box {
   background-color: #f4f4f4;
   padding: 5em;
-  width: 30%; /* Sets the base width of each box */
+  width: 30%;
   text-align: center;
   border-radius: 5px;
   margin-bottom: 1em;
-  flex: 1 1 400px; /* Makes the boxes flexible and responsive: grow and shrink, with a minimum width of 400px */
-  margin: 0.5em; /* Adds margin around each box */
+  flex: 1 1 400px;
+  margin: 0.5em;
 }
 ```
+
+**Explanation:**
+- The `content` section is styled as a flex container with `space-between` alignment, ensuring equal space between content boxes. Padding is added for spacing inside the section.
+- The `flex-wrap: wrap` allows the content boxes to wrap to the next line if necessary.
+- The `content .box` selector styles individual content boxes with a light background color, padding, a specific width, and centered text. The `flex: 1 1 400px` makes each box flexible and responsive, allowing them to grow or shrink as needed with a minimum width of 400px. The margin adds spacing around each box.
 
 #### Style the Footer
 
@@ -198,6 +215,9 @@ footer {
   padding: 1em 0;
 }
 ```
+
+**Explanation:**
+- The `footer` selector is styled with a dark background color and white text, similar to the header, and centered text with padding on the top and bottom.
 
 ## Testing Your Layout:
 
