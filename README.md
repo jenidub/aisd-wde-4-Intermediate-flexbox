@@ -260,11 +260,6 @@ We’ll check how the Flexbox layout adjusts to different screen sizes and manag
 
 ##
 
-If you have any questions or need further explanations, feel free to ask the AI for help.
-
-
-##
-
 # Conclusion 📄
 We've now covered the fundamentals of building a responsive website using Flexbox. We progressively added and styled key sections of the webpage, including a navigation bar, main content area, and footer. We applied Flexbox techniques to create a layout that adapts smoothly to different screen sizes. Finally, we tested our layout to see how Flexbox handles various scenarios. You’ve now gained hands-on experience in creating a responsive webpage that looks great on any device.
 
