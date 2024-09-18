@@ -265,7 +265,7 @@ Now, you will test the responsiveness of your layout by resizing the browser win
 ##
 
 # Conclusion 📄
-We've now covered the fundamentals of building a responsive website using Flexbox. You progressively added and styled key sections of the webpage, including a navigation bar, main content area, and footer. You applied Flexbox techniques to create a layout that adapts smoothly to different screen sizes. Finally, you tested your layout to see how Flexbox handles various scenarios. You’ve now gained hands-on experience in creating a responsive webpage that looks great on any device.
+You've now covered the fundamentals of building a responsive website using Flexbox. You progressively added and styled key sections of the webpage, including a navigation bar, main content area, and footer. You applied Flexbox techniques to create a layout that adapts smoothly to different screen sizes. Finally, you tested your layout to see how Flexbox handles various scenarios. You’ve now gained hands-on experience in creating a responsive webpage that looks great on any device.
 
 ##
 
